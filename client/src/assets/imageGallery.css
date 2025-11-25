@@ -1,0 +1,33 @@
+.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: -webkit-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%) !important;
+    background: -moz-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%) !important;
+    background: -o-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%) !important;
+    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%) !important;
+}
+
+.swiper .swiper-pagination {
+    position: absolute !important;
+    right: 20px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 1000;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+    height: 5px !important;
+    width: 20px !important;
+    background: #dddddd !important;
+    margin: 5px !important;
+    display: block !important;
+    content: "";
+    border-radius: 50px !important;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet:hover {
+    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%) !important;
+    cursor: pointer !important;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 30px !important;
+}

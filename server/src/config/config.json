@@ -1,0 +1,35 @@
+{
+  "development": {
+    "username": "ptudw_project",
+    "password": "aG6pPCB3Cnwd6JWS3yyzchF0vXCTgr4X",
+    "database": "ptudw_project",
+    "host": "dpg-d47ufm3ipnbc73d54qjg-a.singapore-postgres.render.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "ptudw_project",
+    "password": "aG6pPCB3Cnwd6JWS3yyzchF0vXCTgr4X",
+    "database": "ptudw_project",
+    "host": "dpg-d47ufm3ipnbc73d54qjg-a.singapore-postgres.render.com",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}
