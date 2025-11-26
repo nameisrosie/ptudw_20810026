@@ -4,7 +4,6 @@ import RoutesDef from "./RoutesDef.jsx";
 
 function App() {
   useEffect(() => {
-    //nap main.js sau khi react da tai Virtual DOM
     const script = document.createElement("script");
     script.src = "/js/main.js";
     script.async = true;
