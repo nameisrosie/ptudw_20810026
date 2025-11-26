@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; // <--- 1. Import Link
 import { http } from "../lib/http.js";
 
 export default function SidebarCategories() {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState();
   const [error, setError] = useState();
-
   useEffect(() => {
     let canceled = false;
 
@@ -17,7 +15,7 @@ export default function SidebarCategories() {
       try {
         const res = await http.get("/categories");
         const data = res.data.data;
-        // console.log(res.data);
+        console.log(res.data);
         if (!canceled) {
           setCategories(data);
           setLoading(false);
@@ -49,11 +47,10 @@ export default function SidebarCategories() {
           !error &&
           categories.map((c) => (
             <li className="main-nav-list" key={c.id}>
-              {/* 2. Sửa thẻ a thành Link để không bị reload trang */}
-              <Link to={"/products?category=" + c.id}>
+              <a href={"/products?category=" + c.id}>
                 {c.name}
-                <span className="number">({c.Products?.length || 0})</span>
-              </Link>
+                <span className="number">({c.Products.length})</span>
+              </a>
             </li>
           ))}
       </ul>
